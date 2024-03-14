@@ -20,7 +20,6 @@ public:
         if(secsmallest+smallest > money)
         return money;
         
-        
         return money - (secsmallest+smallest);
     }
 };
