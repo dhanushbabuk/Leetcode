@@ -9,7 +9,8 @@ public:
             if(ch < start || ch > end)
             return false;
         }
-    return true;
+        
+         return true;
     } 
 
 
@@ -17,7 +18,7 @@ public:
     bool detectCapitalUse(string word) {
         
         if(check(word,'A','Z') || check(word,'a','z') || check(word.substr(1),'a','z'))
-        return true;
+                 return true;
 
         return false;
 
