@@ -29,7 +29,9 @@ public:
         {
             temp=temp->next;
         }
+        
         temp->next=right;
+        
         return list1;
     }
 };
