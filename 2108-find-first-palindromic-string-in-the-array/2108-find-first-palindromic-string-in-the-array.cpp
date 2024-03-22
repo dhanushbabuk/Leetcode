@@ -4,9 +4,7 @@ public:
         
         for(string &word:words)
         {
-            string temp = word;
-            reverse(begin(temp),end(temp));
-            if(temp==word)
+            if(word == string(rbegin(word),rend(word)))
             return word; 
         }
         return "";
