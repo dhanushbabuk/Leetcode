@@ -32,11 +32,10 @@ public:
             {
                 count+=upper[i]-1;
                 odd=1;
-
             }
 
         }
-        return count+ odd;
+        return (count+odd);
         
     }
 };
