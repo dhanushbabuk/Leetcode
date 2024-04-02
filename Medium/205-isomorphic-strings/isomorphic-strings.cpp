@@ -5,25 +5,23 @@ public:
         unordered_map<char, char> t_to_s;
 
         for (int i = 0; i < s.size(); ++i) {
-            char s_char = s[i];
-            char t_char = t[i];
-
+           
             // Check mapping from s to t
-            if (s_to_t.find(s_char) == s_to_t.end()) {
+            if (s_to_t.find( s[i]) == s_to_t.end()) {
                 // not found
-                s_to_t[s_char] = t_char;
+                s_to_t[ s[i]] = t[i];
             } else {
-                if (s_to_t[s_char] != t_char) {
+                if (s_to_t[ s[i]] != t[i]) {
                     return false; 
                 }
             }
 
             // Check mapping from t to s
-            if (t_to_s.find(t_char) == t_to_s.end()) {
+            if (t_to_s.find(t[i]) == t_to_s.end()) {
                 // not found
-                t_to_s[t_char] = s_char;
+                t_to_s[t[i]] =  s[i];
             } else {
-                if (t_to_s[t_char] != s_char) {
+                if (t_to_s[t[i]] !=  s[i]) {
                     return false; 
                 }
             }
