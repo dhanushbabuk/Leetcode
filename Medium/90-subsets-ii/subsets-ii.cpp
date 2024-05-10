@@ -4,7 +4,7 @@ public:
     void generate(vector<int>ip, vector<int>op) {
 
         if (ip.empty()) {
-             sort(op.begin(),op.end());
+             sort(op.begin(),op.end());//oder of output matters so
             s.insert(op);
             return;
         }
