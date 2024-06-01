@@ -10,7 +10,7 @@ public:
         {
             mpp[fruits[r]]++;
 
-            if(mpp.size() > 2)
+            while(mpp.size() > 2)
             {   
                 mpp[fruits[l]]--;
 
