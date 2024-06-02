@@ -9,7 +9,7 @@ public:
             mpp[s[r]-'a']++;
         maxfre = max(maxfre,mpp[s[r]-'a']);
 
-            while(r-l+1 - maxfre> k)
+            if(r-l+1 - maxfre> k)
             {
                 mpp[s[l]-'a']--;
 
