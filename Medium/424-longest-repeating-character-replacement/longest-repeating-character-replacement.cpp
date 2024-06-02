@@ -16,10 +16,9 @@ public:
                 l++;
             }
 
-            if(r-l+1 - maxfre <= k)
-            {
+    
                 maxlen =max(maxlen,r-l+1);
-            }
+            
             r++;
 
         }
