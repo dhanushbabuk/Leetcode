@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int fun(std::vector<int>& nums, int k) {
+    int fun(vector<int>& nums, int k) {
         if (k < 0) return 0;
 
         int l = 0, r = 0, cnt = 0, sum = 0;
