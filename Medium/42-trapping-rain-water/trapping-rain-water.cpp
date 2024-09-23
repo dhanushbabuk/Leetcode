@@ -22,17 +22,17 @@ public:
         }
 
         vector<int>water(size);
-        int ans = 0;
         for(int i =0;i<size;i++)
         {
             water[i] = min(mxl[i],mxr[i]) - height[i];
-            ans += water[i];
         }
 
+        int ans = 0;
 
-        // for(int i=0;i<size;i++)
-        // {
-        // }
+        for(int i=0;i<size;i++)
+        {
+            ans += water[i];
+        }
         
         return ans;
     }
