@@ -44,11 +44,11 @@ public:
             f = (f+1)%capacity;
             size--;
 
-            if(isEmpty())
-            {
-                f = -1;
-                r =-1;
-            }
+            // if(isEmpty())
+            // {
+            //     f = -1;
+            //     r =-1;
+            // }
             return true;
         }
         return false;
